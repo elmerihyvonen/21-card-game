@@ -1,6 +1,6 @@
 # 21 card game
 
-This is a implementation of card game 21 (Blackjack). User interaction is handled by console.
+Implementation of card game 21 (Blackjack). User interaction is handled by console.
 
 ## Rules
 
