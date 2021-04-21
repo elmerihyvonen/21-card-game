@@ -17,7 +17,7 @@ type Card = (Suit, Value)
 type Deck = [Card]
 
 -- data type representing the possible player actions
-data Action = Hit | Stay deriving (Show, Eq)
+data Action = Hit | Stay deriving (Eq)
 
 --function to return the value of given card
 cardValues :: Card -> Int
@@ -36,7 +36,7 @@ cardValues (_ , _)     = 10
 printCard :: Card -> String
 printCard c = show (snd c) ++ " of " ++ show (fst c) ++ "'s"
 
---function that prints the whole hand, recursive function
+--function that prints the whole hand
 showHand :: [Card] -> String
 showHand [] = ""
 showHand (c:cs) = printCard c ++ " | " ++ showHand cs
