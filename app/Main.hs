@@ -1,7 +1,6 @@
 module Main where
 
 import Cards
-import Control.Monad
 import System.IO
 import System.Random
 import System.Random (randomRIO)
